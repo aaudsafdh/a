@@ -49,7 +49,7 @@
 	if World1 then
 		Boss = {
 			"The Gorilla King",
-			"Bobby",
+			"Chef",
 			"The Saw",
 			"Yeti",
 			"Mob Leader",
@@ -1006,8 +1006,8 @@ end
 				Qdata = 3;
 				PosQBoss = CFrame.new(-1601.6553955078, 36.85213470459, 153.38809204102)
 				PosB = CFrame.new(-1088.75977, 8.13463783, -488.559906, -0.707134247, 0, 0.707079291, 0, 1, 0, -0.707079291, 0, -0.707134247)
-			elseif _G.FindBoss == "Bobby" then
-				bMon = "Bobby"
+			elseif _G.FindBoss == "Chef" then
+				bMon = "Chef"
 				Qname = "BuggyQuest1"
 				Qdata = 3;
 				PosQBoss = CFrame.new(-1140.1761474609, 4.752049446106, 3827.4057617188)
@@ -11058,7 +11058,7 @@ end)
 		Title = "Rain Fruits (Client)",
 		Description = "",
 		Callback = function()
-			for i, v in pairs(game:GetObjects("rbxassetid://130158102180738")[1]:GetChildren()) do --thay ảnh icon bằng cách xóa 130158102180738 và dán id ảnh
+			for i, v in pairs(game:GetObjects("rbxassetid://130158102180738")[1]:GetChildren()) do
 				v.Parent = game.Workspace.Map
 				v:MoveTo(plr.Character.PrimaryPart.Position + Vector3.new(math.random(-50, 50), 100, math.random(-50, 50)))
 				if v.Fruit:FindFirstChild("AnimationController") then
